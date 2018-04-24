@@ -13,7 +13,6 @@ def home(request):
 def empresas(request):
 	listas_empresas = listaEmpresas.objects.all()
 	contexto_emp = {'listas_empresas': listas_empresas}
-	print(listas_empresas)
 	return render(request, "empregos_app/empresas.html")
 
 @login_required

@@ -1,32 +1,23 @@
 {% load static %}
 <!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>TechJobs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{% static 'empregos_app/assets/css/main.css' %}" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
 					<!-- Two <img src="{% static 'empregos_app/images/logo.png' %}">-->
 					<a href="{% url 'empregos_app:home' %}"><h1>TechJobs</h1></a>
-					<p>Venha trabalhar nas melhores empresas de Santa Catarina</p>
+					<p>As melhores ofertas de empregos na área de TI em Santa Catarina</p>
 				</header>
 				<div class="container">
 					<ul class="actions">
-						<li><a href="#one" class="button special scrolly">Begin</a></li>
+						<li><a href="#one" class="button special scrolly">Iniciar</a></li>
 					</ul>
 				</div>
 			</section>
@@ -47,14 +38,14 @@
 						<p>Contato: {{lista_empregos.contato}}</p>
 						<p>{{lista_empregos.autor}}</p>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#two" class="goto-next scrolly">Próximo</a>
 				</div>
 			</section>
 
 		{% endfor %}
 
 		<!-- Three -->
-			<section id="four" class="main special">
+			<section id="two" class="main special">
 				<div class="container">
 					<span class="image fit primary"><img src="{% static 'empregos_app/images/pic02.jpg' %}" alt="" /></span>
 					<div class="content">
@@ -73,7 +64,7 @@
 							</li>
 							<li>
 								<span class="icon major fa-code"></span>
-								<h3>Nulla Tempus</h3>
+								<a href="{% url 'servicos_app:home_servicos' %}"><h3>Serviços</h3></a>
 							</li>
 							<li>
 								<span class="icon major  fa-pencil-square-o"></span>
@@ -81,7 +72,7 @@
 							</li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#footer" class="goto-next scrolly">Próximo</a>
 				</div>
 			</section>
 
@@ -93,12 +84,12 @@
 					</header>
 					<form method="post" action="#">
 						<div class="row uniform">
-							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
 							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="Mensagem" rows="4"></textarea></div>
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special" /></li>
+									<li><input type="submit" value="Enviar Mensagem" class="special" /></li>
 								</ul>
 							</div>
 						</div>
@@ -106,14 +97,11 @@
 				</div>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/maiconrockers" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.facebook.com/maiconrockers" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.gmail.com" target="_blank" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; MaiconFuck</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+						<li>&copy; MaiconFuck</li>
 					</ul>
 				</footer>
 			</section>

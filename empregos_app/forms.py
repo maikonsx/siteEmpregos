@@ -5,5 +5,5 @@ class cadastrarEmpregosForm(forms.ModelForm):
 
 	class Meta:
 		model = listaEmpregos
-		fields = ('titulo', 'descricao', 'salario')
+		fields = ('titulo', 'descricao', 'salario', 'contato')
 

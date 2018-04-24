@@ -5,4 +5,4 @@ from .models import listaServicos
 def home_servicos(request):
 	listasservicos = listaServicos.objects.all()
 	contexto = {'listasservicos': listasservicos}
-	return render(request, "empregos_app/index.html", contexto)
+	return render(request, "servicos_app/home_servicos.html", contexto)
